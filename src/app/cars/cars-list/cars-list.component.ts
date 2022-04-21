@@ -33,7 +33,7 @@ export class CarsListComponent implements OnInit {
         surname: 'Nowak'
       },
       cost: 1200,
-      isFullyDamaged: true
+      isFullyDamaged: false
     },
     {
       id: 3,
