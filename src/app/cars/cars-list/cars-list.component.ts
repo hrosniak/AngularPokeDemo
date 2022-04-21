@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { Car } from '../models/car';
+import {Component, OnInit} from '@angular/core';
+import {Car} from '../models/car';
 
 @Component({
   selector: 'cs-cars-list',
@@ -50,7 +50,8 @@ export class CarsListComponent implements OnInit {
     }
   ]
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
