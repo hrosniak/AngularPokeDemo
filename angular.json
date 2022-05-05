@@ -103,6 +103,12 @@
             "styleExt": "less",
             "component": {
               "spec": false
+            },
+            "directive": {
+              "spec": false
+            },
+            "service": {
+              "spec": false
             }
           }
         }
