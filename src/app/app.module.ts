@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CarsModule } from './cars/cars.module';
+import { CoreModule } from "./core-module/core-module";
 
 @NgModule({
   declarations: [
@@ -12,9 +13,11 @@ import { CarsModule } from './cars/cars.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CarsModule
+    CarsModule,
+    CoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
