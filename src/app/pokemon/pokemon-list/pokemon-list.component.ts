@@ -10,7 +10,7 @@ export class PokemonListComponent implements OnInit {
 
   pokemon: PokemonType[] = [
     {
-      name: 'bulbasaur',
+      name:  'bulbasaur',
       height: 7,
       id: 1,
       type: 'grass',
