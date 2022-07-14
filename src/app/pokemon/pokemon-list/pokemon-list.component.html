@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <table *ngIf="pokemon.length > 0; else noPokemonInfo" class="pk-table table table-striped">
+        <thead>
+        <tr>
+          <th>pokedex id</th>
+          <th>name</th>
+          <th>height</th>
+          <th>weight</th>
+          <th>type</th>
+          <th>action</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let poke of pokemon; let i = index">
+          <td [ngClass]="{'row-error': poke.showBoolean}"> {{ poke.id }} </td>
+          <td> {{ poke.name }}</td>
+          <td> {{ poke.height }}</td>
+          <td> {{ poke.weight }}</td>
+          <td> {{ poke.type }}</td>
+          <td> ACTION PLACEHOLDER</td>
+        </tr>
+        </tbody>
+      </table>
+
+      <ng-template #noPokemonInfo>
+        <div class="no-pokemon-info">
+          <p>Currently no pokemon in service, probably something is wrong</p>
+        </div>
+      </ng-template>
+
+    </div>
+  </div>
+</div>

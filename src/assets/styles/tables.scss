@@ -1,0 +1,20 @@
+@import 'variables';
+
+.pk-table {
+  background: $white;
+
+  th {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $blue;
+  }
+
+  td {
+    color: $blue;
+    text-transform: capitalize;
+  }
+
+  .row-error {
+    border-left: 2px solid $red;
+  }
+}
