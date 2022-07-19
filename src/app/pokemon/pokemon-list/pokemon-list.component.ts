@@ -1,16 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-import { PokemonType } from "../models/pokemon-type";
+import { PokemonType } from '../models/pokemon-type';
 
 @Component({
   selector: 'pokemon-list',
   templateUrl: './pokemon-list.component.html',
   styleUrls: ['./pokemon-list.component.scss']
 })
-export class PokemonListComponent implements OnInit {
-  totalWeight!: number;
-  totalHeight!: number;
-  totalPokemon!: number;
 
+export class PokemonListComponent implements OnInit {
+  totalPokemon!: number;
   pokemon: PokemonType[] = [
     {
       name:  'bulbasaur',
@@ -42,22 +40,8 @@ export class PokemonListComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    // this.countTotalWeight();
-    // this.countTotalHeight();
     this.countTotalPokemon();
   }
-
-  // countTotalWeight(): void {
-  //   this.totalWeight = this.pokemon
-  //     .map((pokemon) => pokemon.weight)
-  //     .reduce((prev, next) => prev + next);
-  // }
-  //
-  // countTotalHeight(): void {
-  //   this.totalHeight = this.pokemon
-  //     .map((pokemon) => pokemon.height)
-  //     .reduce((prev, next) => prev + next);
-  // }
 
   countTotalPokemon(): void {
     this.totalPokemon = this.pokemon.length
