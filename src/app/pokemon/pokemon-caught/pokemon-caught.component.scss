@@ -1,0 +1,9 @@
+@import '../../../assets/styles/variables';
+
+.total-pokemon {
+  background: $dark-gray;
+  padding: 15px;
+  text-transform: capitalize;
+  color: $white;
+}
+
