@@ -7,6 +7,9 @@ import { PokemonType } from "../models/pokemon-type";
   styleUrls: ['./pokemon-list.component.scss']
 })
 export class PokemonListComponent implements OnInit {
+  totalWeight!: number;
+  totalHeight!: number;
+  totalPokemon!: number;
 
   pokemon: PokemonType[] = [
     {
@@ -39,6 +42,24 @@ export class PokemonListComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    // this.countTotalWeight();
+    // this.countTotalHeight();
+    this.countTotalPokemon();
+  }
 
+  // countTotalWeight(): void {
+  //   this.totalWeight = this.pokemon
+  //     .map((pokemon) => pokemon.weight)
+  //     .reduce((prev, next) => prev + next);
+  // }
+  //
+  // countTotalHeight(): void {
+  //   this.totalHeight = this.pokemon
+  //     .map((pokemon) => pokemon.height)
+  //     .reduce((prev, next) => prev + next);
+  // }
+
+  countTotalPokemon(): void {
+    this.totalPokemon = this.pokemon.length
   }
 }
